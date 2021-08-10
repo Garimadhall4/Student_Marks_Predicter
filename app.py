@@ -9,7 +9,7 @@ model = joblib.load("STUDENT_MARK_PREDICTER.pkl")
 
 df = pd.DataFrame()
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def home():
     return render_template('index.html')
 
